@@ -58,24 +58,29 @@ async def start_(client: Client, message: Message):
 🔖 **ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!**
 """,
         reply_markup=InlineKeyboardMarkup(
-            [
+           [
                 [
                     InlineKeyboardButton(
                         "➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀᴇ ɢʀᴏᴜᴘ➕",
-                        url=f"http://t.me/Js_lIVESTREAMER_Bot?startgroup=true",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbbasic"),
-                    InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/janith_sadanuwean"),
+                    InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "ɢʀᴏᴜᴘ", url=f"https://t.me/Janithbots"
+                        "ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/janithsbots" 
+                        "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "Youtube Chanel", url="www.youtube.com/c/janithsadanuwan"
                     )
                 ],
             ]
